@@ -1,0 +1,12 @@
+.odd {
+    background: lightgray;
+}
+td {
+    padding: 7.5px;
+}
+th {
+    text-align: center;
+    padding: 7.5px;
+    background: grey;
+    color: white;
+}
