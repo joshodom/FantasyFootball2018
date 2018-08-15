@@ -6,13 +6,12 @@ import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { IdiotsComponent } from './idiots/idiots.component';
-import { DraftResultsComponent } from './draft-results/draft-results.component';
 import { RankingsComponent } from './rankings/rankings.component';
+import { ManagerCardComponent } from './manager-card/manager-card.component';
 
 const appRoutes: Routes = [
   { path: 'home', redirectTo: '/'},
   { path: 'idiots', component: IdiotsComponent },
-  { path: 'draftResults', component: DraftResultsComponent },
   { path: 'rankings', component: RankingsComponent }
 ]
 
@@ -21,7 +20,7 @@ const appRoutes: Routes = [
     CommonModule,
     RouterModule.forRoot(appRoutes)
   ],
-  declarations: [LayoutComponent, HeaderComponent, FooterComponent, IdiotsComponent, DraftResultsComponent, RankingsComponent],
+  declarations: [LayoutComponent, HeaderComponent, FooterComponent, IdiotsComponent, RankingsComponent, ManagerCardComponent],
   exports: [LayoutComponent]
 })
 export class UiModule { }

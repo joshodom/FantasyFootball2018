@@ -10,3 +10,7 @@ th {
     background: grey;
     color: white;
 }
+table.gametable {
+    margin-left: auto;
+    margin-right: auto;
+}
