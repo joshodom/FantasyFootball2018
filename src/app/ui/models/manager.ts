@@ -1,6 +1,6 @@
 import { Team } from "./team";
 
-export class manager {
+export class Manager {
     draftedTeam: Team;
     finalTeam: Team;
     teamName: string;
