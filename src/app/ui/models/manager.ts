@@ -1,12 +1,14 @@
 import { Team } from "./team";
 
 export class manager {
-    team: Team;
+    draftedTeam: Team;
+    finalTeam: Team;
     teamName: string;
     place: number;
-    constructor(_team: Team, _name: string, _place: number) {
-        this.team = _team;
+    constructor(_draftedTeam: Team, _finalTeam: Team, _name: string, _place: number) {
+        this.draftedTeam = _draftedTeam;
+        this.finalTeam = _finalTeam;
         this.teamName = _name;
-        this.place = _place;   
+        this.place = _place;
     }
 }

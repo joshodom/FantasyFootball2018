@@ -10,10 +10,10 @@ export class ManagerCardComponent implements OnInit {
   @Input() manager: manager;
   _manager: manager;
   constructor() {
-   }
+  }
 
   ngOnInit() {
-    this._manager = new manager(this.manager.team, this.manager.teamName, this.manager.place);
+    this._manager = new manager(this.manager.draftedTeam, this.manager.finalTeam, this.manager.teamName, this.manager.place);
   }
 
 }
