@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+.ARI {
+    background: #97233F;
+    color: white;
+    border-bottom: 4px solid #FFB612;
+}
+.ATL {
+    background: #A71930;
+    color: white;
+    border-bottom: 4px solid black;
+}
+.BAL {
+    background: #241773;
+    color: white;
+    border-bottom: 4px solid #9E7C0C;
+}
+.BUF {
+    background: #C60C30;
+    color: white;
+    border-bottom: 4px solid #00338D;
+}
+.CAR {
+    background: #0085CA;
+    color: white;
+    border-bottom: 4px solid #BFC0BF;
+}
+.CHI {
+    background: #0B162A;
+    color: white;
+    border-bottom: 4px solid #C83803;
+}
+.CIN {
+    background: #FB4F14;
+    color: white;
+    border-bottom: 4px dashed black;
+}
+.CLE {
+    background: #FF3C00;
+    color: white;
+    border-bottom: 4px solid #311D00;
+}
+.DAL {
+    background: #041E42;
+    color: white;
+    border-bottom: 4px solid #869397;
+}
+.DEN {
+    background: #024;
+    color: white;
+    border-bottom: 4px solid #FB4F14;
+}
+.DET {
+    background: #0076B6;
+    color: white;
+    border-bottom: 4px solid #B0B7BC;
+}
+.GB {
+    background: #203731;
+    color: white;
+    border-bottom: 4px solid #FFB612;
+}
+.HOU {
+    background: #03202F;
+    color: white;
+    border-bottom: 4px solid #A71930;
+}

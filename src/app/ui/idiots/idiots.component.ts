@@ -4,41 +4,41 @@ import { Team } from '../models/team';
 import { Player } from '../models/player';
 
 enum NFCTeams {
-  Arizona = "Arizona Cardinals",
-  Atlanta = "Atlanta Falcons",
-  Carolina = "Carolina Panthers",
-  Chicago = "Chicago Bears",
-  Dallas = "Dallas Cowboys",
-  Detroit = "Detroit Lions",
-  GreenBay = "Green Bay Packers",
-  LosAngeles = "Los Angeles Rams",
-  Minnesota = "Minnesota Vikings",
-  NewOrleans = "New Orleans Saints",
-  NewYork = "New York Giants",
-  Philadelphia = "Philadelphia Eagles",
-  SanFrancisco = "San Francisco 49ers",
-  Seattle = "Seattle Seahawks",
-  TampaBay = "Tampa Bay Buccaneers",
-  Washington = "Washington Redskins"
+  Arizona = "ARI",
+  Atlanta = "ATL",
+  Carolina = "CAR",
+  Chicago = "CHI",
+  Dallas = "DAL",
+  Detroit = "DET",
+  GreenBay = "GB",
+  LosAngeles = "LAR",
+  Minnesota = "MIN",
+  NewOrleans = "NO",
+  NewYork = "NYG",
+  Philadelphia = "PHI",
+  SanFrancisco = "SF",
+  Seattle = "SEA",
+  TampaBay = "TB",
+  Washington = "WASH"
 };
 
 enum AFCTeams {
-  Baltimore = 'Baltimore Ravens',
-  Buffalo = 'Buffalo Bills',
-  Cincinnati = 'Cincinatti Bengals',
-  Cleveland = 'Cleveland Browns',
-  Denver = 'Denver Broncos',
-  Houston = 'Houston Texans',
-  Indianapolis = 'Indianapolis Colts',
-  Jacksonville = 'Jacksonville Jaguars',
-  KansasCity = 'Kansas City Chiefs',
-  LosAngeles = 'Los Angeles Chargers',
-  Miami = 'Miami Dolphins',
-  NewEngland = 'New England Patriots',
-  NewYork = 'New York Jets',
-  Oakland = 'Oakland Raiders',
-  Pittsburgh = 'Pittsburgh Steelers',
-  Tennessee = 'Tennessee Titans'
+  Baltimore = 'BAL',
+  Buffalo = 'BUF',
+  Cincinnati = 'CIN',
+  Cleveland = 'CLE',
+  Denver = 'DEN',
+  Houston = 'HOU',
+  Indianapolis = 'IND',
+  Jacksonville = 'JAC',
+  KansasCity = 'KC',
+  LosAngeles = 'LAC',
+  Miami = 'MIA',
+  NewEngland = 'NE',
+  NewYork = 'NYJ',
+  Oakland = 'OAK',
+  Pittsburgh = 'PIT',
+  Tennessee = 'TEN'
 };
 
 enum Positions {

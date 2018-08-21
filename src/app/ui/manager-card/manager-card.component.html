@@ -1,19 +1,25 @@
-<div class="container content"> <!-- container centers content on large screens -->
-  <div class="row">             <!-- responsive row has 12 columns by default -->
-    <div class="col-md-4">      <!-- uses 6 columns on medium and larger screens... -->
-      Bio: <br />
-      {{_manager.bio}}
+<div class="container content">
+  <!-- container centers content on large screens -->
+  <div class="row">
+    <!-- responsive row has 12 columns by default -->
+    <div class="col-md-4">
+      <!-- uses 6 columns on medium and larger screens... -->
+      Bio:
+      <br /> {{_manager.bio}}
     </div>
-    <div class="col-md-4">     <!-- uses 12 columns on smaller than medium screens -->
-      Drafted: <br />
-      <div *ngFor="let player of manager.draftedTeam.players">
-        {{player.name}} <span class="playerSubInfo">({{player.team}} - {{player.position}})</span>
+    <div class="col-md-4">
+      <!-- uses 12 columns on smaller than medium screens -->
+      <h3>Drafted: </h3>
+      <br />
+      <div *ngFor="let player of manager.draftedTeam.players" class="playerCard">
+        <span class="{{player.team}}">{{player.name}} - ({{player.position}})</span>
       </div>
     </div>
     <div class="col-md-4">
-      Final Roster: <br />
-      <div *ngFor="let player of manager.finalTeam.players">
-        {{player.name}} <span class="playerSubInfo">({{player.team}} - {{player.position}})</span>
+      <h3>Final Roster:</h3>
+      <br />
+      <div *ngFor="let player of manager.finalTeam.players" class="playerCard">
+        <span class="{{player.team}}">{{player.name}} - ({{player.position}})</span>
       </div>
     </div>
   </div>
