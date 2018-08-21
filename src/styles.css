@@ -64,3 +64,100 @@
     color: white;
     border-bottom: 4px solid #A71930;
 }
+.IND {
+    background: #002C5F;
+    color: white;
+    border-bottom: 4px solid #A2AAAD;
+}
+.JAC {
+    background: #006778;
+    color: white;
+    border-bottom: 4px solid #D7A22A;
+}
+.KC {
+    background: #E31837;
+    color: white;
+    border-bottom: 4px solid #FFB81C;
+}
+.LAC {
+    background: #002A5E;
+    color: white;
+    border-bottom: 4px solid #FFC20E;
+}
+.LAR {
+    background: #024;
+    color: white;
+    border-bottom: 4px solid #866D4B;
+}
+.MIA {
+    background: #008E97;
+    color: white;
+    border-bottom: 4px solid #F26A24;
+}
+.MIN {
+    background: #4F2683;
+    color: white;
+    border-bottom: 4px solid #FFC62F;
+}
+.NE {
+    background: #002244;
+    color: white;
+    border-bottom: 4px solid #C60C30;
+}
+.NO {
+    background: #D3BC8D;
+    color: white;
+    border-bottom: 4px solid #101820;
+}
+.NYG {
+    background: #0B2265;
+    color: white;
+    border-bottom: 4px solid #A71930;
+}
+.NYJ {
+    background: #003F2D;
+    color: white;
+    border-bottom: 4px solid #FFFFFF;
+}
+.OAK {
+    background: #000000;
+    color: white;
+    border-bottom: 4px solid #A5ACAF;
+}
+.PHI {
+    background: #004C54;
+    color: white;
+    border-bottom: 4px solid #A5ACAF;
+}
+.PIT {
+    background: #A5ACAF;
+    color: white;
+    border-top: 4px solid #FFB612;
+    border-right: 4px solid #C60C30;
+    border-bottom: 4px solid #00539B;
+}
+.SF {
+    background: #AA0000;
+    color: white;
+    border-bottom: 4px solid #B3995D;
+}
+.SEA {
+    background: #002244;
+    color: white;
+    border-bottom: 4px solid #69BE28;
+}
+.TB {
+    background: #D50A0A;
+    color: white;
+    border-bottom: 4px solid #0A0A08;
+}
+.TEN {
+    background: #4495D1;
+    color: white;
+    border-bottom: 4px solid #002A5C;
+}
+.WASH {
+    background: #773141;
+    color: white;
+    border-bottom: 4px solid #FFB612;
+}

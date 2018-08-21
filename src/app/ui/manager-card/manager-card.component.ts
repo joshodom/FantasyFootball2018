@@ -13,7 +13,7 @@ export class ManagerCardComponent implements OnInit {
   }
 
   ngOnInit() {
-    this._manager = new Manager(this.manager.draftedTeam, this.manager.finalTeam, this.manager.teamName, this.manager.place, this.manager.bio);
+    this._manager = new Manager(this.manager.draftedTeam, this.manager.finalTeam, this.manager.teamName, this.manager.place, this.manager.bio, this.manager.WLT, this.manager.ptsFor, this.manager.ptsAgainst);
   }
 
 }
