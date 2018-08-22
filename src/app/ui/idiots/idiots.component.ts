@@ -3,7 +3,7 @@ import { Manager } from '../models/manager';
 import { Team } from '../models/team';
 import { Player } from '../models/player';
 
-enum NFCTeams {
+enum Teams {
   Arizona = "ARI",
   Atlanta = "ATL",
   Carolina = "CAR",
@@ -11,18 +11,15 @@ enum NFCTeams {
   Dallas = "DAL",
   Detroit = "DET",
   GreenBay = "GB",
-  LosAngeles = "LAR",
+  LAR = "LAR",
   Minnesota = "MIN",
   NewOrleans = "NO",
-  NewYork = "NYG",
+  NYG = "NYG",
   Philadelphia = "PHI",
   SanFrancisco = "SF",
   Seattle = "SEA",
   TampaBay = "TB",
-  Washington = "WASH"
-};
-
-enum AFCTeams {
+  Washington = "WASH",
   Baltimore = 'BAL',
   Buffalo = 'BUF',
   Cincinnati = 'CIN',
@@ -32,10 +29,10 @@ enum AFCTeams {
   Indianapolis = 'IND',
   Jacksonville = 'JAC',
   KansasCity = 'KC',
-  LosAngeles = 'LAC',
+  LAC = 'LAC',
   Miami = 'MIA',
   NewEngland = 'NE',
-  NewYork = 'NYJ',
+  NYJ = 'NYJ',
   Oakland = 'OAK',
   Pittsburgh = 'PIT',
   Tennessee = 'TEN'
@@ -87,301 +84,281 @@ export class IdiotsComponent implements OnInit {
 
   cameronDrafted(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Julio Jones', NFCTeams.Atlanta, Positions.WR));
-    myTeam.addPlayer(
-      new Player('Marshawn Lynch', AFCTeams.Oakland, Positions.RB)
-    );
-    myTeam.addPlayer(
-      new Player('Kareem Hunt', AFCTeams.KansasCity, Positions.RB)
-    );
-    myTeam.addPlayer(
-      new Player('Carlos Hyde', AFCTeams.Cleveland, Positions.RB)
-    );
-    myTeam.addPlayer(
-      new Player('Martavis Bryant', AFCTeams.Oakland, Positions.WR)
-    );
-    myTeam.addPlayer(
-      new Player('Brandon Marshall', NFCTeams.Seattle, Positions.WR)
-    );
-    myTeam.addPlayer(
-      new Player('Adrian Peterson', NFCTeams.Arizona, Positions.RB)
-    );
-    myTeam.addPlayer(
-      new Player('Zach Ertz', NFCTeams.Philadelphia, Positions.TE)
-    );
-    myTeam.addPlayer(
-      new Player('Corey Coleman', AFCTeams.Buffalo, Positions.WR)
-    );
-    myTeam.addPlayer(
-      new Player('Duke Johnson Jr.', AFCTeams.Cleveland, Positions.RB)
-    );
-    myTeam.addPlayer(
-      new Player('Jamaal Charles', AFCTeams.Denver, Positions.RB)
-    );
-    myTeam.addPlayer(new Player('Cam Newton', NFCTeams.Carolina, Positions.QB));
-    myTeam.addPlayer(new Player('Buffalo', AFCTeams.Buffalo, Positions.DEF));
-    myTeam.addPlayer(new Player('Joe Williams', NFCTeams.SanFrancisco, Positions.RB));
-    myTeam.addPlayer(new Player('Spencer Ware', AFCTeams.KansasCity, Positions.RB));
+    myTeam.addPlayer(new Player('Julio Jones', Teams.Atlanta, Positions.WR));
+    myTeam.addPlayer(new Player('Marshawn Lynch', Teams.Oakland, Positions.RB));
+    myTeam.addPlayer(new Player('Kareem Hunt', Teams.KansasCity, Positions.RB));
+    myTeam.addPlayer(new Player('Carlos Hyde', Teams.Cleveland, Positions.RB));
+    myTeam.addPlayer(new Player('Martavis Bryant', Teams.Oakland, Positions.WR));
+    myTeam.addPlayer(new Player('Brandon Marshall', Teams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('Adrian Peterson', Teams.Arizona, Positions.RB));
+    myTeam.addPlayer(new Player('Zach Ertz', Teams.Philadelphia, Positions.TE));
+    myTeam.addPlayer(new Player('Corey Coleman', Teams.Buffalo, Positions.WR));
+    myTeam.addPlayer(new Player('Duke Johnson Jr.', Teams.Cleveland, Positions.RB));
+    myTeam.addPlayer(new Player('Jamaal Charles', Teams.Denver, Positions.RB));
+    myTeam.addPlayer(new Player('Cam Newton', Teams.Carolina, Positions.QB));
+    myTeam.addPlayer(new Player('Buffalo', Teams.Buffalo, Positions.DEF));
+    myTeam.addPlayer(new Player('Joe Williams', Teams.SanFrancisco, Positions.RB));
+    myTeam.addPlayer(new Player('Spencer Ware', Teams.KansasCity, Positions.RB));
     return myTeam;
   }
 
   cameronFinal(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Peyton Barber', NFCTeams.TampaBay, Positions.RB));
-    myTeam.addPlayer(new Player('Mike Davis', NFCTeams.Seattle, Positions.RB));
-    myTeam.addPlayer(new Player('Zach Ertz', NFCTeams.Philadelphia, Positions.TE)); //
-    myTeam.addPlayer(new Player('Kareem Hunt', AFCTeams.KansasCity, Positions.RB)); //
-    myTeam.addPlayer(new Player('Duke Johnson Jr.', AFCTeams.Cleveland, Positions.RB)); //
-    myTeam.addPlayer(new Player('Julio Jones', NFCTeams.Atlanta, Positions.WR)); //
-    myTeam.addPlayer(new Player('Marshawn Lynch', AFCTeams.Oakland, Positions.RB)); //
-    myTeam.addPlayer(new Player('Christian McCaffrey', NFCTeams.Carolina, Positions.RB));
-    myTeam.addPlayer(new Player('Cam Newton', NFCTeams.Carolina, Positions.QB)); //
-    myTeam.addPlayer(new Player('Theo Riddick', NFCTeams.Detroit, Positions.RB));
-    myTeam.addPlayer(new Player('Sterling Shepard', NFCTeams.NewYork, Positions.WR));
-    myTeam.addPlayer(new Player('Mike Wallace', AFCTeams.Baltimore, Positions.WR));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Washington', NFCTeams.Washington, Positions.DEF));
-    myTeam.addPlayer(new Player('Carolina', NFCTeams.Carolina, Positions.DEF));
+    myTeam.addPlayer(new Player('Peyton Barber', Teams.TampaBay, Positions.RB));
+    myTeam.addPlayer(new Player('Mike Davis', Teams.Seattle, Positions.RB));
+    myTeam.addPlayer(new Player('Zach Ertz', Teams.Philadelphia, Positions.TE));
+    myTeam.addPlayer(new Player('Kareem Hunt', Teams.KansasCity, Positions.RB));
+    myTeam.addPlayer(new Player('Duke Johnson Jr.', Teams.Cleveland, Positions.RB));
+    myTeam.addPlayer(new Player('Julio Jones', Teams.Atlanta, Positions.WR));
+    myTeam.addPlayer(new Player('Marshawn Lynch', Teams.Oakland, Positions.RB));
+    myTeam.addPlayer(new Player('Christian McCaffrey', Teams.Carolina, Positions.RB));
+    myTeam.addPlayer(new Player('Cam Newton', Teams.Carolina, Positions.QB));
+    myTeam.addPlayer(new Player('Theo Riddick', Teams.Detroit, Positions.RB));
+    myTeam.addPlayer(new Player('Sterling Shepard', Teams.NYG, Positions.WR));
+    myTeam.addPlayer(new Player('Mike Wallace', Teams.Baltimore, Positions.WR));
+    myTeam.addPlayer(new Player('Justin Tucker', Teams.Baltimore, Positions.K));
+    myTeam.addPlayer(new Player('Washington', Teams.Washington, Positions.DEF));
+    myTeam.addPlayer(new Player('Carolina', Teams.Carolina, Positions.DEF));
     return myTeam;
   }
 
   mitchDrafted(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Jay Ajayi', NFCTeams.Philadelphia, Positions.RB));
-    myTeam.addPlayer(new Player('Leonard Fournette', AFCTeams.Jacksonville, Positions.RB));
-    myTeam.addPlayer(new Player('Alshon Jeffery', NFCTeams.Philadelphia, Positions.WR));
-    myTeam.addPlayer(new Player('Tom Brady', AFCTeams.NewEngland, Positions.QB));
-    myTeam.addPlayer(new Player('Jordan Reed', NFCTeams.Washington, Positions.TE));
-    myTeam.addPlayer(new Player('Jamison Crowder', NFCTeams.Washington, Positions.WR));
-    myTeam.addPlayer(new Player('Jordan Matthews', AFCTeams.NewEngland, Positions.WR));
-    myTeam.addPlayer(new Player('Rishard Matthews', AFCTeams.Tennessee, Positions.WR));
-    myTeam.addPlayer(new Player('Thomas Rawls', AFCTeams.NewYork, Positions.RB));
-    myTeam.addPlayer(new Player('Kevin White', NFCTeams.Chicago, Positions.WR));
-    myTeam.addPlayer(new Player('Houston', AFCTeams.Houston, Positions.DEF));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Carson Wentz', NFCTeams.Philadelphia, Positions.QB));
-    myTeam.addPlayer(new Player('Dwayne Allen', AFCTeams.NewEngland, Positions.TE));
-    myTeam.addPlayer(new Player('Tyler Lockett', NFCTeams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('Jay Ajayi', Teams.Philadelphia, Positions.RB));
+    myTeam.addPlayer(new Player('Leonard Fournette', Teams.Jacksonville, Positions.RB));
+    myTeam.addPlayer(new Player('Alshon Jeffery', Teams.Philadelphia, Positions.WR));
+    myTeam.addPlayer(new Player('Tom Brady', Teams.NewEngland, Positions.QB));
+    myTeam.addPlayer(new Player('Jordan Reed', Teams.Washington, Positions.TE));
+    myTeam.addPlayer(new Player('Jamison Crowder', Teams.Washington, Positions.WR));
+    myTeam.addPlayer(new Player('Jordan Matthews', Teams.NewEngland, Positions.WR));
+    myTeam.addPlayer(new Player('Rishard Matthews', Teams.Tennessee, Positions.WR));
+    myTeam.addPlayer(new Player('Thomas Rawls', Teams.NYJ, Positions.RB));
+    myTeam.addPlayer(new Player('Kevin White', Teams.Chicago, Positions.WR));
+    myTeam.addPlayer(new Player('Houston', Teams.Houston, Positions.DEF));
+    myTeam.addPlayer(new Player('Justin Tucker', Teams.Baltimore, Positions.K));
+    myTeam.addPlayer(new Player('Carson Wentz', Teams.Philadelphia, Positions.QB));
+    myTeam.addPlayer(new Player('Dwayne Allen', Teams.NewEngland, Positions.TE));
+    myTeam.addPlayer(new Player('Tyler Lockett', Teams.Seattle, Positions.WR));
     return myTeam;
   }
 
   mitchFinal(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Peyton Barber', NFCTeams.TampaBay, Positions.RB));
-    myTeam.addPlayer(new Player('Mike Davis', NFCTeams.Seattle, Positions.RB));
-    myTeam.addPlayer(new Player('Zach Ertz', NFCTeams.Philadelphia, Positions.TE)); //
-    myTeam.addPlayer(new Player('Kareem Hunt', AFCTeams.KansasCity, Positions.RB)); //
-    myTeam.addPlayer(new Player('Duke Johnson Jr.', AFCTeams.Cleveland, Positions.RB)); //
-    myTeam.addPlayer(new Player('Julio Jones', NFCTeams.Atlanta, Positions.WR)); //
-    myTeam.addPlayer(new Player('Marshawn Lynch', AFCTeams.Oakland, Positions.RB)); //
-    myTeam.addPlayer(new Player('Christian McCaffrey', NFCTeams.Carolina, Positions.RB));
-    myTeam.addPlayer(new Player('Cam Newton', NFCTeams.Carolina, Positions.QB)); //
-    myTeam.addPlayer(new Player('Theo Riddick', NFCTeams.Detroit, Positions.RB));
-    myTeam.addPlayer(new Player('Sterling Shepard', NFCTeams.NewYork, Positions.WR));
-    myTeam.addPlayer(new Player('Mike Wallace', AFCTeams.Baltimore, Positions.WR));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Washington', NFCTeams.Washington, Positions.DEF));
-    myTeam.addPlayer(new Player('Carolina', NFCTeams.Carolina, Positions.DEF));
+    myTeam.addPlayer(new Player('Peyton Barber', Teams.TampaBay, Positions.RB));
+    myTeam.addPlayer(new Player('Mike Davis', Teams.Seattle, Positions.RB));
+    myTeam.addPlayer(new Player('Zach Ertz', Teams.Philadelphia, Positions.TE)); //
+    myTeam.addPlayer(new Player('Kareem Hunt', Teams.KansasCity, Positions.RB)); //
+    myTeam.addPlayer(new Player('Duke Johnson Jr.', Teams.Cleveland, Positions.RB)); //
+    myTeam.addPlayer(new Player('Julio Jones', Teams.Atlanta, Positions.WR)); //
+    myTeam.addPlayer(new Player('Marshawn Lynch', Teams.Oakland, Positions.RB)); //
+    myTeam.addPlayer(new Player('Christian McCaffrey', Teams.Carolina, Positions.RB));
+    myTeam.addPlayer(new Player('Cam Newton', Teams.Carolina, Positions.QB)); //
+    myTeam.addPlayer(new Player('Theo Riddick', Teams.Detroit, Positions.RB));
+    myTeam.addPlayer(new Player('Sterling Shepard', Teams, Positions.WR));
+    myTeam.addPlayer(new Player('Mike Wallace', Teams.Baltimore, Positions.WR));
+    myTeam.addPlayer(new Player('Justin Tucker', Teams.Baltimore, Positions.K));
+    myTeam.addPlayer(new Player('Washington', Teams.Washington, Positions.DEF));
+    myTeam.addPlayer(new Player('Carolina', Teams.Carolina, Positions.DEF));
     return myTeam;
   }
 
   berhorstDrafted(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Jay Ajayi', NFCTeams.Philadelphia, Positions.RB));
-    myTeam.addPlayer(new Player('Leonard Fournette', AFCTeams.Jacksonville, Positions.RB));
-    myTeam.addPlayer(new Player('Alshon Jeffery', NFCTeams.Philadelphia, Positions.WR));
-    myTeam.addPlayer(new Player('Tom Brady', AFCTeams.NewEngland, Positions.QB));
-    myTeam.addPlayer(new Player('Jordan Reed', NFCTeams.Washington, Positions.TE));
-    myTeam.addPlayer(new Player('Jamison Crowder', NFCTeams.Washington, Positions.WR));
-    myTeam.addPlayer(new Player('Jordan Matthews', AFCTeams.NewEngland, Positions.WR));
-    myTeam.addPlayer(new Player('Rishard Matthews', AFCTeams.Tennessee, Positions.WR));
-    myTeam.addPlayer(new Player('Thomas Rawls', AFCTeams.NewYork, Positions.RB));
-    myTeam.addPlayer(new Player('Kevin White', NFCTeams.Chicago, Positions.WR));
-    myTeam.addPlayer(new Player('Houston', AFCTeams.Houston, Positions.DEF));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Carson Wentz', NFCTeams.Philadelphia, Positions.QB));
-    myTeam.addPlayer(new Player('Dwayne Allen', AFCTeams.NewEngland, Positions.TE));
-    myTeam.addPlayer(new Player('Tyler Lockett', NFCTeams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('Le\'Veon Bell', Teams.Pittsburgh, Positions.RB));
+    myTeam.addPlayer(new Player('Aaron Rodgers', Teams.GreenBay, Positions.QB));
+    myTeam.addPlayer(new Player('Doug Baldwin', Teams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('LeGarrette Blount', Teams.Detroit, Positions.RB));
+    myTeam.addPlayer(new Player('Hunter Henry', Teams.LAC, Positions.TE));
+    myTeam.addPlayer(new Player('DeSean Jackson', Teams.TampaBay, Positions.WR));
+    myTeam.addPlayer(new Player('DeVante Parker', Teams.Miami, Positions.WR));
+    myTeam.addPlayer(new Player('Seattle', Teams.Seattle, Positions.DEF));
+    myTeam.addPlayer(new Player('Taylor Gabriel', Teams.Chicago, Positions.WR));
+    myTeam.addPlayer(new Player('Jacquizz Rodgers', Teams.TampaBay, Positions.RB));
+    myTeam.addPlayer(new Player('C.J. Prosise', Teams.Seattle, Positions.RB));
+    myTeam.addPlayer(new Player('Corey Davis', Teams.Tennessee, Positions.WR));
+    myTeam.addPlayer(new Player('Stephen Gostkowski', Teams.NewEngland, Positions.K));
+    myTeam.addPlayer(new Player('Eli Manning', Teams.NYG, Positions.QB));
+    myTeam.addPlayer(new Player('John Ross', Teams.Cincinnati, Positions.WR));
     return myTeam;
   }
 
   orschelnDrafted(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Jay Ajayi', NFCTeams.Philadelphia, Positions.RB));
-    myTeam.addPlayer(new Player('Leonard Fournette', AFCTeams.Jacksonville, Positions.RB));
-    myTeam.addPlayer(new Player('Alshon Jeffery', NFCTeams.Philadelphia, Positions.WR));
-    myTeam.addPlayer(new Player('Tom Brady', AFCTeams.NewEngland, Positions.QB));
-    myTeam.addPlayer(new Player('Jordan Reed', NFCTeams.Washington, Positions.TE));
-    myTeam.addPlayer(new Player('Jamison Crowder', NFCTeams.Washington, Positions.WR));
-    myTeam.addPlayer(new Player('Jordan Matthews', AFCTeams.NewEngland, Positions.WR));
-    myTeam.addPlayer(new Player('Rishard Matthews', AFCTeams.Tennessee, Positions.WR));
-    myTeam.addPlayer(new Player('Thomas Rawls', AFCTeams.NewYork, Positions.RB));
-    myTeam.addPlayer(new Player('Kevin White', NFCTeams.Chicago, Positions.WR));
-    myTeam.addPlayer(new Player('Houston', AFCTeams.Houston, Positions.DEF));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Carson Wentz', NFCTeams.Philadelphia, Positions.QB));
-    myTeam.addPlayer(new Player('Dwayne Allen', AFCTeams.NewEngland, Positions.TE));
-    myTeam.addPlayer(new Player('Tyler Lockett', NFCTeams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('Melvin Gordon', Teams.LAC, Positions.RB));
+    myTeam.addPlayer(new Player('Ezekiel Elliott', Teams.Dallas, Positions.RB));
+    myTeam.addPlayer(new Player('Terrelle Pryor Sr.', Teams.NYJ, Positions.WR));
+    myTeam.addPlayer(new Player('Ameer Abdullah', Teams.Detroit, Positions.RB));
+    myTeam.addPlayer(new Player('Davante Adams', Teams.GreenBay, Positions.WR));
+    myTeam.addPlayer(new Player('Darren McFadden', Teams.Dallas, Positions.RB));
+    myTeam.addPlayer(new Player('Stefon Diggs', Teams.Minnesota, Positions.WR));
+    myTeam.addPlayer(new Player('Kirk Cousins', Teams.Minnesota, Positions.QB));
+    myTeam.addPlayer(new Player('Delanie Walker', Teams.Tennessee, Positions.TE));
+    myTeam.addPlayer(new Player('John Brown', Teams.Baltimore, Positions.WR));
+    myTeam.addPlayer(new Player('James White', Teams.NewEngland, Positions.RB));
+    myTeam.addPlayer(new Player('Zay Jones', Teams.Buffalo, Positions.WR));
+    myTeam.addPlayer(new Player('Arizona', Teams.Arizona, Positions.DEF));
+    myTeam.addPlayer(new Player('Brandon McManus', Teams.Denver, Positions.K));
+    myTeam.addPlayer(new Player('Kenny Britt', Teams.NewEngland, Positions.WR));
     return myTeam;
   }
 
   benDrafted(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Jay Ajayi', NFCTeams.Philadelphia, Positions.RB));
-    myTeam.addPlayer(new Player('Leonard Fournette', AFCTeams.Jacksonville, Positions.RB));
-    myTeam.addPlayer(new Player('Alshon Jeffery', NFCTeams.Philadelphia, Positions.WR));
-    myTeam.addPlayer(new Player('Tom Brady', AFCTeams.NewEngland, Positions.QB));
-    myTeam.addPlayer(new Player('Jordan Reed', NFCTeams.Washington, Positions.TE));
-    myTeam.addPlayer(new Player('Jamison Crowder', NFCTeams.Washington, Positions.WR));
-    myTeam.addPlayer(new Player('Jordan Matthews', AFCTeams.NewEngland, Positions.WR));
-    myTeam.addPlayer(new Player('Rishard Matthews', AFCTeams.Tennessee, Positions.WR));
-    myTeam.addPlayer(new Player('Thomas Rawls', AFCTeams.NewYork, Positions.RB));
-    myTeam.addPlayer(new Player('Kevin White', NFCTeams.Chicago, Positions.WR));
-    myTeam.addPlayer(new Player('Houston', AFCTeams.Houston, Positions.DEF));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Carson Wentz', NFCTeams.Philadelphia, Positions.QB));
-    myTeam.addPlayer(new Player('Dwayne Allen', AFCTeams.NewEngland, Positions.TE));
-    myTeam.addPlayer(new Player('Tyler Lockett', NFCTeams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('A.J. Green', Teams.Cincinnati, Positions.WR));
+    myTeam.addPlayer(new Player('DeMarco Murray', Teams.Tennessee, Positions.));
+    myTeam.addPlayer(new Player('Ty Montgomery', Teams.GreenBay, Positions.));
+    myTeam.addPlayer(new Player('Joe Mixon', Teams.Cincinnati, Positions.));
+    myTeam.addPlayer(new Player('Larry Fitzgerald', Teams.Arizona, Positions.));
+    myTeam.addPlayer(new Player('Emmanuel Sanders', Teams.Denver, Positions.));
+    myTeam.addPlayer(new Player('Matt Ryan', Teams.Atlanta, Positions.));
+    myTeam.addPlayer(new Player('Jeremy Maclin', Teams.Baltimore, Positions.));
+    myTeam.addPlayer(new Player('Eric Ebron', Teams.Indianapolis, Positions.));
+    myTeam.addPlayer(new Player('Dak Prescott', Teams.Dallas, Positions.));
+    myTeam.addPlayer(new Player('Kansas City', Teams.KansasCity, Positions.));
+    myTeam.addPlayer(new Player('Antonio Gates', Teams.LAC, Positions.));
+    myTeam.addPlayer(new Player('Torrey Smith', Teams.Carolina, Positions.));
+    myTeam.addPlayer(new Player('Danny Amendola', Teams.NewEngland, Positions.WR));
+    myTeam.addPlayer(new Player('Sebastian Janikowski', Teams., Positions.));
     return myTeam;
   }
 
   mikeDrafted(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Jay Ajayi', NFCTeams.Philadelphia, Positions.RB));
-    myTeam.addPlayer(new Player('Leonard Fournette', AFCTeams.Jacksonville, Positions.RB));
-    myTeam.addPlayer(new Player('Alshon Jeffery', NFCTeams.Philadelphia, Positions.WR));
-    myTeam.addPlayer(new Player('Tom Brady', AFCTeams.NewEngland, Positions.QB));
-    myTeam.addPlayer(new Player('Jordan Reed', NFCTeams.Washington, Positions.TE));
-    myTeam.addPlayer(new Player('Jamison Crowder', NFCTeams.Washington, Positions.WR));
-    myTeam.addPlayer(new Player('Jordan Matthews', AFCTeams.NewEngland, Positions.WR));
-    myTeam.addPlayer(new Player('Rishard Matthews', AFCTeams.Tennessee, Positions.WR));
-    myTeam.addPlayer(new Player('Thomas Rawls', AFCTeams.NewYork, Positions.RB));
-    myTeam.addPlayer(new Player('Kevin White', NFCTeams.Chicago, Positions.WR));
-    myTeam.addPlayer(new Player('Houston', AFCTeams.Houston, Positions.DEF));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Carson Wentz', NFCTeams.Philadelphia, Positions.QB));
-    myTeam.addPlayer(new Player('Dwayne Allen', AFCTeams.NewEngland, Positions.TE));
-    myTeam.addPlayer(new Player('Tyler Lockett', NFCTeams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('Jay Ajayi', Teams.Philadelphia, Positions.RB));
+    myTeam.addPlayer(new Player('Leonard Fournette', Teams.Jacksonville, Positions.RB));
+    myTeam.addPlayer(new Player('Alshon Jeffery', Teams.Philadelphia, Positions.WR));
+    myTeam.addPlayer(new Player('Tom Brady', Teams.NewEngland, Positions.QB));
+    myTeam.addPlayer(new Player('Jordan Reed', Teams.Washington, Positions.TE));
+    myTeam.addPlayer(new Player('Jamison Crowder', Teams.Washington, Positions.WR));
+    myTeam.addPlayer(new Player('Jordan Matthews', Teams.NewEngland, Positions.WR));
+    myTeam.addPlayer(new Player('Rishard Matthews', Teams.Tennessee, Positions.WR));
+    myTeam.addPlayer(new Player('Thomas Rawls', Teams.NewYork, Positions.RB));
+    myTeam.addPlayer(new Player('Kevin White', Teams.Chicago, Positions.WR));
+    myTeam.addPlayer(new Player('Houston', Teams.Houston, Positions.DEF));
+    myTeam.addPlayer(new Player('Justin Tucker', Teams.Baltimore, Positions.K));
+    myTeam.addPlayer(new Player('Carson Wentz', Teams.Philadelphia, Positions.QB));
+    myTeam.addPlayer(new Player('Dwayne Allen', Teams.NewEngland, Positions.TE));
+    myTeam.addPlayer(new Player('Tyler Lockett', Teams.Seattle, Positions.WR));
     return myTeam;
   }
 
   joshDrafted(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Jay Ajayi', NFCTeams.Philadelphia, Positions.RB));
-    myTeam.addPlayer(new Player('Leonard Fournette', AFCTeams.Jacksonville, Positions.RB));
-    myTeam.addPlayer(new Player('Alshon Jeffery', NFCTeams.Philadelphia, Positions.WR));
-    myTeam.addPlayer(new Player('Tom Brady', AFCTeams.NewEngland, Positions.QB));
-    myTeam.addPlayer(new Player('Jordan Reed', NFCTeams.Washington, Positions.TE));
-    myTeam.addPlayer(new Player('Jamison Crowder', NFCTeams.Washington, Positions.WR));
-    myTeam.addPlayer(new Player('Jordan Matthews', AFCTeams.NewEngland, Positions.WR));
-    myTeam.addPlayer(new Player('Rishard Matthews', AFCTeams.Tennessee, Positions.WR));
-    myTeam.addPlayer(new Player('Thomas Rawls', AFCTeams.NewYork, Positions.RB));
-    myTeam.addPlayer(new Player('Kevin White', NFCTeams.Chicago, Positions.WR));
-    myTeam.addPlayer(new Player('Houston', AFCTeams.Houston, Positions.DEF));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Carson Wentz', NFCTeams.Philadelphia, Positions.QB));
-    myTeam.addPlayer(new Player('Dwayne Allen', AFCTeams.NewEngland, Positions.TE));
-    myTeam.addPlayer(new Player('Tyler Lockett', NFCTeams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('Jay Ajayi', Teams.Philadelphia, Positions.RB));
+    myTeam.addPlayer(new Player('Leonard Fournette', Teams.Jacksonville, Positions.RB));
+    myTeam.addPlayer(new Player('Alshon Jeffery', Teams.Philadelphia, Positions.WR));
+    myTeam.addPlayer(new Player('Tom Brady', Teams.NewEngland, Positions.QB));
+    myTeam.addPlayer(new Player('Jordan Reed', Teams.Washington, Positions.TE));
+    myTeam.addPlayer(new Player('Jamison Crowder', Teams.Washington, Positions.WR));
+    myTeam.addPlayer(new Player('Jordan Matthews', Teams.NewEngland, Positions.WR));
+    myTeam.addPlayer(new Player('Rishard Matthews', Teams.Tennessee, Positions.WR));
+    myTeam.addPlayer(new Player('Thomas Rawls', Teams.NewYork, Positions.RB));
+    myTeam.addPlayer(new Player('Kevin White', Teams.Chicago, Positions.WR));
+    myTeam.addPlayer(new Player('Houston', Teams.Houston, Positions.DEF));
+    myTeam.addPlayer(new Player('Justin Tucker', Teams.Baltimore, Positions.K));
+    myTeam.addPlayer(new Player('Carson Wentz', Teams.Philadelphia, Positions.QB));
+    myTeam.addPlayer(new Player('Dwayne Allen', Teams.NewEngland, Positions.TE));
+    myTeam.addPlayer(new Player('Tyler Lockett', Teams.Seattle, Positions.WR));
     return myTeam;
   }
 
   ajDrafted(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Jay Ajayi', NFCTeams.Philadelphia, Positions.RB));
-    myTeam.addPlayer(new Player('Leonard Fournette', AFCTeams.Jacksonville, Positions.RB));
-    myTeam.addPlayer(new Player('Alshon Jeffery', NFCTeams.Philadelphia, Positions.WR));
-    myTeam.addPlayer(new Player('Tom Brady', AFCTeams.NewEngland, Positions.QB));
-    myTeam.addPlayer(new Player('Jordan Reed', NFCTeams.Washington, Positions.TE));
-    myTeam.addPlayer(new Player('Jamison Crowder', NFCTeams.Washington, Positions.WR));
-    myTeam.addPlayer(new Player('Jordan Matthews', AFCTeams.NewEngland, Positions.WR));
-    myTeam.addPlayer(new Player('Rishard Matthews', AFCTeams.Tennessee, Positions.WR));
-    myTeam.addPlayer(new Player('Thomas Rawls', AFCTeams.NewYork, Positions.RB));
-    myTeam.addPlayer(new Player('Kevin White', NFCTeams.Chicago, Positions.WR));
-    myTeam.addPlayer(new Player('Houston', AFCTeams.Houston, Positions.DEF));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Carson Wentz', NFCTeams.Philadelphia, Positions.QB));
-    myTeam.addPlayer(new Player('Dwayne Allen', AFCTeams.NewEngland, Positions.TE));
-    myTeam.addPlayer(new Player('Tyler Lockett', NFCTeams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('Jay Ajayi', Teams.Philadelphia, Positions.RB));
+    myTeam.addPlayer(new Player('Leonard Fournette', Teams.Jacksonville, Positions.RB));
+    myTeam.addPlayer(new Player('Alshon Jeffery', Teams.Philadelphia, Positions.WR));
+    myTeam.addPlayer(new Player('Tom Brady', Teams.NewEngland, Positions.QB));
+    myTeam.addPlayer(new Player('Jordan Reed', Teams.Washington, Positions.TE));
+    myTeam.addPlayer(new Player('Jamison Crowder', Teams.Washington, Positions.WR));
+    myTeam.addPlayer(new Player('Jordan Matthews', Teams.NewEngland, Positions.WR));
+    myTeam.addPlayer(new Player('Rishard Matthews', Teams.Tennessee, Positions.WR));
+    myTeam.addPlayer(new Player('Thomas Rawls', Teams.NewYork, Positions.RB));
+    myTeam.addPlayer(new Player('Kevin White', Teams.Chicago, Positions.WR));
+    myTeam.addPlayer(new Player('Houston', Teams.Houston, Positions.DEF));
+    myTeam.addPlayer(new Player('Justin Tucker', Teams.Baltimore, Positions.K));
+    myTeam.addPlayer(new Player('Carson Wentz', Teams.Philadelphia, Positions.QB));
+    myTeam.addPlayer(new Player('Dwayne Allen', Teams.NewEngland, Positions.TE));
+    myTeam.addPlayer(new Player('Tyler Lockett', Teams.Seattle, Positions.WR));
     return myTeam;
   }
 
   ryanDrafted(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Jay Ajayi', NFCTeams.Philadelphia, Positions.RB));
-    myTeam.addPlayer(new Player('Leonard Fournette', AFCTeams.Jacksonville, Positions.RB));
-    myTeam.addPlayer(new Player('Alshon Jeffery', NFCTeams.Philadelphia, Positions.WR));
-    myTeam.addPlayer(new Player('Tom Brady', AFCTeams.NewEngland, Positions.QB));
-    myTeam.addPlayer(new Player('Jordan Reed', NFCTeams.Washington, Positions.TE));
-    myTeam.addPlayer(new Player('Jamison Crowder', NFCTeams.Washington, Positions.WR));
-    myTeam.addPlayer(new Player('Jordan Matthews', AFCTeams.NewEngland, Positions.WR));
-    myTeam.addPlayer(new Player('Rishard Matthews', AFCTeams.Tennessee, Positions.WR));
-    myTeam.addPlayer(new Player('Thomas Rawls', AFCTeams.NewYork, Positions.RB));
-    myTeam.addPlayer(new Player('Kevin White', NFCTeams.Chicago, Positions.WR));
-    myTeam.addPlayer(new Player('Houston', AFCTeams.Houston, Positions.DEF));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Carson Wentz', NFCTeams.Philadelphia, Positions.QB));
-    myTeam.addPlayer(new Player('Dwayne Allen', AFCTeams.NewEngland, Positions.TE));
-    myTeam.addPlayer(new Player('Tyler Lockett', NFCTeams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('Jay Ajayi', Teams.Philadelphia, Positions.RB));
+    myTeam.addPlayer(new Player('Leonard Fournette', Teams.Jacksonville, Positions.RB));
+    myTeam.addPlayer(new Player('Alshon Jeffery', Teams.Philadelphia, Positions.WR));
+    myTeam.addPlayer(new Player('Tom Brady', Teams.NewEngland, Positions.QB));
+    myTeam.addPlayer(new Player('Jordan Reed', Teams.Washington, Positions.TE));
+    myTeam.addPlayer(new Player('Jamison Crowder', Teams.Washington, Positions.WR));
+    myTeam.addPlayer(new Player('Jordan Matthews', Teams.NewEngland, Positions.WR));
+    myTeam.addPlayer(new Player('Rishard Matthews', Teams.Tennessee, Positions.WR));
+    myTeam.addPlayer(new Player('Thomas Rawls', Teams.NewYork, Positions.RB));
+    myTeam.addPlayer(new Player('Kevin White', Teams.Chicago, Positions.WR));
+    myTeam.addPlayer(new Player('Houston', Teams.Houston, Positions.DEF));
+    myTeam.addPlayer(new Player('Justin Tucker', Teams.Baltimore, Positions.K));
+    myTeam.addPlayer(new Player('Carson Wentz', Teams.Philadelphia, Positions.QB));
+    myTeam.addPlayer(new Player('Dwayne Allen', Teams.NewEngland, Positions.TE));
+    myTeam.addPlayer(new Player('Tyler Lockett', Teams.Seattle, Positions.WR));
     return myTeam;
   }
 
   robbDrafted(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Jay Ajayi', NFCTeams.Philadelphia, Positions.RB));
-    myTeam.addPlayer(new Player('Leonard Fournette', AFCTeams.Jacksonville, Positions.RB));
-    myTeam.addPlayer(new Player('Alshon Jeffery', NFCTeams.Philadelphia, Positions.WR));
-    myTeam.addPlayer(new Player('Tom Brady', AFCTeams.NewEngland, Positions.QB));
-    myTeam.addPlayer(new Player('Jordan Reed', NFCTeams.Washington, Positions.TE));
-    myTeam.addPlayer(new Player('Jamison Crowder', NFCTeams.Washington, Positions.WR));
-    myTeam.addPlayer(new Player('Jordan Matthews', AFCTeams.NewEngland, Positions.WR));
-    myTeam.addPlayer(new Player('Rishard Matthews', AFCTeams.Tennessee, Positions.WR));
-    myTeam.addPlayer(new Player('Thomas Rawls', AFCTeams.NewYork, Positions.RB));
-    myTeam.addPlayer(new Player('Kevin White', NFCTeams.Chicago, Positions.WR));
-    myTeam.addPlayer(new Player('Houston', AFCTeams.Houston, Positions.DEF));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Carson Wentz', NFCTeams.Philadelphia, Positions.QB));
-    myTeam.addPlayer(new Player('Dwayne Allen', AFCTeams.NewEngland, Positions.TE));
-    myTeam.addPlayer(new Player('Tyler Lockett', NFCTeams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('Jay Ajayi', Teams.Philadelphia, Positions.RB));
+    myTeam.addPlayer(new Player('Leonard Fournette', Teams.Jacksonville, Positions.RB));
+    myTeam.addPlayer(new Player('Alshon Jeffery', Teams.Philadelphia, Positions.WR));
+    myTeam.addPlayer(new Player('Tom Brady', Teams.NewEngland, Positions.QB));
+    myTeam.addPlayer(new Player('Jordan Reed', Teams.Washington, Positions.TE));
+    myTeam.addPlayer(new Player('Jamison Crowder', Teams.Washington, Positions.WR));
+    myTeam.addPlayer(new Player('Jordan Matthews', Teams.NewEngland, Positions.WR));
+    myTeam.addPlayer(new Player('Rishard Matthews', Teams.Tennessee, Positions.WR));
+    myTeam.addPlayer(new Player('Thomas Rawls', Teams.NewYork, Positions.RB));
+    myTeam.addPlayer(new Player('Kevin White', Teams.Chicago, Positions.WR));
+    myTeam.addPlayer(new Player('Houston', Teams.Houston, Positions.DEF));
+    myTeam.addPlayer(new Player('Justin Tucker', Teams.Baltimore, Positions.K));
+    myTeam.addPlayer(new Player('Carson Wentz', Teams.Philadelphia, Positions.QB));
+    myTeam.addPlayer(new Player('Dwayne Allen', Teams.NewEngland, Positions.TE));
+    myTeam.addPlayer(new Player('Tyler Lockett', Teams.Seattle, Positions.WR));
     return myTeam;
   }
 
   steveDrafted(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Jay Ajayi', NFCTeams.Philadelphia, Positions.RB));
-    myTeam.addPlayer(new Player('Leonard Fournette', AFCTeams.Jacksonville, Positions.RB));
-    myTeam.addPlayer(new Player('Alshon Jeffery', NFCTeams.Philadelphia, Positions.WR));
-    myTeam.addPlayer(new Player('Tom Brady', AFCTeams.NewEngland, Positions.QB));
-    myTeam.addPlayer(new Player('Jordan Reed', NFCTeams.Washington, Positions.TE));
-    myTeam.addPlayer(new Player('Jamison Crowder', NFCTeams.Washington, Positions.WR));
-    myTeam.addPlayer(new Player('Jordan Matthews', AFCTeams.NewEngland, Positions.WR));
-    myTeam.addPlayer(new Player('Rishard Matthews', AFCTeams.Tennessee, Positions.WR));
-    myTeam.addPlayer(new Player('Thomas Rawls', AFCTeams.NewYork, Positions.RB));
-    myTeam.addPlayer(new Player('Kevin White', NFCTeams.Chicago, Positions.WR));
-    myTeam.addPlayer(new Player('Houston', AFCTeams.Houston, Positions.DEF));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Carson Wentz', NFCTeams.Philadelphia, Positions.QB));
-    myTeam.addPlayer(new Player('Dwayne Allen', AFCTeams.NewEngland, Positions.TE));
-    myTeam.addPlayer(new Player('Tyler Lockett', NFCTeams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('Jay Ajayi', Teams.Philadelphia, Positions.RB));
+    myTeam.addPlayer(new Player('Leonard Fournette', Teams.Jacksonville, Positions.RB));
+    myTeam.addPlayer(new Player('Alshon Jeffery', Teams.Philadelphia, Positions.WR));
+    myTeam.addPlayer(new Player('Tom Brady', Teams.NewEngland, Positions.QB));
+    myTeam.addPlayer(new Player('Jordan Reed', Teams.Washington, Positions.TE));
+    myTeam.addPlayer(new Player('Jamison Crowder', Teams.Washington, Positions.WR));
+    myTeam.addPlayer(new Player('Jordan Matthews', Teams.NewEngland, Positions.WR));
+    myTeam.addPlayer(new Player('Rishard Matthews', Teams.Tennessee, Positions.WR));
+    myTeam.addPlayer(new Player('Thomas Rawls', Teams.NewYork, Positions.RB));
+    myTeam.addPlayer(new Player('Kevin White', Teams.Chicago, Positions.WR));
+    myTeam.addPlayer(new Player('Houston', Teams.Houston, Positions.DEF));
+    myTeam.addPlayer(new Player('Justin Tucker', Teams.Baltimore, Positions.K));
+    myTeam.addPlayer(new Player('Carson Wentz', Teams.Philadelphia, Positions.QB));
+    myTeam.addPlayer(new Player('Dwayne Allen', Teams.NewEngland, Positions.TE));
+    myTeam.addPlayer(new Player('Tyler Lockett', Teams.Seattle, Positions.WR));
     return myTeam;
   }
 
   meDrafted(): Team {
     var myTeam = new Team();
-    myTeam.addPlayer(new Player('Jay Ajayi', NFCTeams.Philadelphia, Positions.RB));
-    myTeam.addPlayer(new Player('Leonard Fournette', AFCTeams.Jacksonville, Positions.RB));
-    myTeam.addPlayer(new Player('Alshon Jeffery', NFCTeams.Philadelphia, Positions.WR));
-    myTeam.addPlayer(new Player('Tom Brady', AFCTeams.NewEngland, Positions.QB));
-    myTeam.addPlayer(new Player('Jordan Reed', NFCTeams.Washington, Positions.TE));
-    myTeam.addPlayer(new Player('Jamison Crowder', NFCTeams.Washington, Positions.WR));
-    myTeam.addPlayer(new Player('Jordan Matthews', AFCTeams.NewEngland, Positions.WR));
-    myTeam.addPlayer(new Player('Rishard Matthews', AFCTeams.Tennessee, Positions.WR));
-    myTeam.addPlayer(new Player('Thomas Rawls', AFCTeams.NewYork, Positions.RB));
-    myTeam.addPlayer(new Player('Kevin White', NFCTeams.Chicago, Positions.WR));
-    myTeam.addPlayer(new Player('Houston', AFCTeams.Houston, Positions.DEF));
-    myTeam.addPlayer(new Player('Justin Tucker', AFCTeams.Baltimore, Positions.K));
-    myTeam.addPlayer(new Player('Carson Wentz', NFCTeams.Philadelphia, Positions.QB));
-    myTeam.addPlayer(new Player('Dwayne Allen', AFCTeams.NewEngland, Positions.TE));
-    myTeam.addPlayer(new Player('Tyler Lockett', NFCTeams.Seattle, Positions.WR));
+    myTeam.addPlayer(new Player('Jay Ajayi', Teams.Philadelphia, Positions.RB));
+    myTeam.addPlayer(new Player('Leonard Fournette', Teams.Jacksonville, Positions.RB));
+    myTeam.addPlayer(new Player('Alshon Jeffery', Teams.Philadelphia, Positions.WR));
+    myTeam.addPlayer(new Player('Tom Brady', Teams.NewEngland, Positions.QB));
+    myTeam.addPlayer(new Player('Jordan Reed', Teams.Washington, Positions.TE));
+    myTeam.addPlayer(new Player('Jamison Crowder', Teams.Washington, Positions.WR));
+    myTeam.addPlayer(new Player('Jordan Matthews', Teams.NewEngland, Positions.WR));
+    myTeam.addPlayer(new Player('Rishard Matthews', Teams.Tennessee, Positions.WR));
+    myTeam.addPlayer(new Player('Thomas Rawls', Teams.NewYork, Positions.RB));
+    myTeam.addPlayer(new Player('Kevin White', Teams.Chicago, Positions.WR));
+    myTeam.addPlayer(new Player('Houston', Teams.Houston, Positions.DEF));
+    myTeam.addPlayer(new Player('Justin Tucker', Teams.Baltimore, Positions.K));
+    myTeam.addPlayer(new Player('Carson Wentz', Teams.Philadelphia, Positions.QB));
+    myTeam.addPlayer(new Player('Dwayne Allen', Teams.NewEngland, Positions.TE));
+    myTeam.addPlayer(new Player('Tyler Lockett', Teams.Seattle, Positions.WR));
     return myTeam;
   }
 
