@@ -12,3 +12,10 @@ span {
     margin-bottom: 2px;
     width: 100%;
 }
+.container {
+    border: 1px solid black;
+    box-shadow: 15px 10px 15px darkgrey;
+    margin: 1.5em;
+    border-radius: 8px;
+    padding: 2em;
+}
