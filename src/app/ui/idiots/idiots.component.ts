@@ -62,7 +62,7 @@ export class IdiotsComponent implements OnInit {
         this.cameronFinal(),
         'No One Fights Alone',
         1,
-        "Cameron isn't terrible like the rest of you assholes",
+        "Cameron isn't terrible like the rest of you assholes, so I'm glad he won. Also his draft was ridiculous, so we couldn't have expected much more than a win. He had a ton of moves which ended up benefiting him quite a bit. I hope the war goes on forever and you get drafted.",
         "9-5-0",
         "1312.46",
         "1244.02"
@@ -74,7 +74,7 @@ export class IdiotsComponent implements OnInit {
         this.mitchFinal(),
         'It\'s Over 9000!!!!',
         2,
-        "Jesus fucking christ what can I say about this dork",
+        "Mr. Collusion himself, Mitch had a great draft. His team is also insane, however I defeated him week 1 so fuck that he sucks. Don't even get me started on his commissioner skills, or should I say the MOST hands off management I have ever seen in my life. He did score the third highest amount of points, so it's not surprising that he was in the top 2. Congrats on 2nd, loser. Oh, and he cried after the Superbowl.",
         "9-5-0",
         "1353.98",
         "1265.12"
@@ -86,7 +86,7 @@ export class IdiotsComponent implements OnInit {
         this.berhorstFinal(),
         'MIZZOU',
         3,
-        "I cannot stress enough how much I hate that this team is third.",
+        "I cannot stress enough how much I hate that this team is third. He didn't even know what he was doing during the draft, he just took all the players with a 'Le' or 'De' in their name, so he's racist. I also beat him in week 3 and then in the final week, my team scored 48 fucking points against him. I'm terribly disappointed that this team is in 3rd, but it's better than I placed by a long shot, so congrats!",
         "8-6-0",
         "1307.30",
         "1256.18"
@@ -98,7 +98,7 @@ export class IdiotsComponent implements OnInit {
         this.orschelnFinal(),
         'Just Saiyan...',
         4,
-        "What a mediocre team, yet here we are..",
+        "What a mediocre team, yet here we are. This fucking turd beat me by LESS than a point, but then kicked the shit out of almost everyone else. His team was insanely explosive and they scored him a lot of points. I expected him to be higher than 4th, but he sucks so he got 4th. Case closed.",
         "8-6-0",
         "1362.32",
         "1369.78"
@@ -110,7 +110,7 @@ export class IdiotsComponent implements OnInit {
         this.benFinal(),
         'Smallville High',
         5,
-        "Quite possibly the worst team to EVER end the season .500",
+        "Quite possibly the worst team to EVER end the season .500, I hate that this team is anything BUT last place. I scored the lowest points out of everyone, and that number WAS HIGHER THAN BEN'S POINTS AGAINST. How unbelievably lucky can an individual be that scores like dog shit and still ends up .500 and in 5th place. I have nothing positive to say except I hope you draft well today you son of a bitch.",
         "7-7-0",
         "1221.90",
         "1148.06"
@@ -122,7 +122,7 @@ export class IdiotsComponent implements OnInit {
         this.mikeFinal(),
         'Dank Memes',
         6,
-        "Seriously, fuck Bilal Powell and everything about him.",
+        "Seriously, fuck Bilal Powell and everything about him. Scoring only 1224 points, I don't understand how this team is anywhere near the top half, let alone 6th place. He scored over 100 only 3 times, 1 of which was when he played me and Bilal Powell had a CAREER DAY rushing. Fuck that and this team being over .500, it's disgusting to think about. Mike, if you're still alive, congrats on 6th place. That hurt my soul to type.",
         "8-6-0",
         "1224.38",
         "1283.82"
@@ -134,7 +134,7 @@ export class IdiotsComponent implements OnInit {
         this.joshFinal(),
         'The Airplanes',
         7,
-        "I'm pretty sure if he could pick every Seahawks player for his team, he would.",
+        "I'm pretty sure if he could pick every Seahawks player for his team, he would. He does the Tiger Woods fist pump every time he gets a player he wants in the draft, and it's adorable. I'm pretty sure he's just like that guy on the league whose wife does everything for him. Little Josh is our Kevin. He should have finished the season 7-7, because his points for and against were almost identical. I can't believe his stupid ass team scored 137 points against me when we played, causing me to fall deep into depression only 10 weeks into the season. What. An. Asshole.",
         "8-6-0",
         "1251.30",
         "1249.08"
@@ -146,7 +146,7 @@ export class IdiotsComponent implements OnInit {
         this.ajFinal(),
         'Just End The Season',
         8,
-        "'That trade doesn't benefit me enough' might as well be his team name.",
+        "'That trade doesn't benefit me enough' might as well be his team name. I actually don't know much about him except for the fact that he is terrible at Fantasy Football. Yet still didn't get last, like I did. His team scored more points than the 3 teams ahead of him, and he drafted David Johnson so I hope this year goes better for him.",
         "7-7-0",
         "1276.04",
         "1237.66"
