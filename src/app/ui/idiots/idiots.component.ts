@@ -62,7 +62,7 @@ export class IdiotsComponent implements OnInit {
         this.cameronFinal(),
         'No One Fights Alone',
         1,
-        "Cameron isn't terrible like the rest of you assholes, so I'm glad he won. Also his draft was ridiculous, so we couldn't have expected much more than a win. He had a ton of moves which ended up benefiting him quite a bit. I hope the war goes on forever and you get drafted.",
+        "Cameron isn't terrible like the rest of you assholes, so I'm glad he won. Also his draft was ridiculous, so we couldn't have expected much more than a win. He had a ton of moves which ended up benefiting him quite a bit, unlike Steve who is technically last, but we'll get to that. Congrats on first, but I hope the war goes on forever and you get drafted.",
         "9-5-0",
         "1312.46",
         "1244.02"
@@ -86,7 +86,7 @@ export class IdiotsComponent implements OnInit {
         this.berhorstFinal(),
         'MIZZOU',
         3,
-        "I cannot stress enough how much I hate that this team is third. He didn't even know what he was doing during the draft, he just took all the players with a 'Le' or 'De' in their name, so he's racist. I also beat him in week 3 and then in the final week, my team scored 48 fucking points against him. I'm terribly disappointed that this team is in 3rd, but it's better than I placed by a long shot, so congrats!",
+        "I cannot stress enough how much I hate that this team is third. He didn't even know what he was doing during the draft, he just took all the players with a 'Le' or 'De' in their name, so he's racist. I also beat him in week 3 and then in the final week, my team scored 48 fucking points against him. I'm terribly disappointed that this team is in 3rd, but it's better than I placed by a long shot, so I hope you're happy you son of a bitch.",
         "8-6-0",
         "1307.30",
         "1256.18"
@@ -98,7 +98,7 @@ export class IdiotsComponent implements OnInit {
         this.orschelnFinal(),
         'Just Saiyan...',
         4,
-        "What a mediocre team, yet here we are. This fucking turd beat me by LESS than a point, but then kicked the shit out of almost everyone else. His team was insanely explosive and they scored him a lot of points. I expected him to be higher than 4th, but he sucks so he got 4th. Case closed.",
+        "What a mediocre team, yet here we are. This fucking turd beat me by LESS than a point, but then kicked the shit out of almost everyone else. His team was insanely explosive and they scored him a lot of points. I expected him to be higher than 4th, but he sucks so he got 4th. Case closed. What a dick.",
         "8-6-0",
         "1362.32",
         "1369.78"
@@ -110,7 +110,7 @@ export class IdiotsComponent implements OnInit {
         this.benFinal(),
         'Smallville High',
         5,
-        "Quite possibly the worst team to EVER end the season .500, I hate that this team is anything BUT last place. I scored the lowest points out of everyone, and that number WAS HIGHER THAN BEN'S POINTS AGAINST. How unbelievably lucky can an individual be that scores like dog shit and still ends up .500 and in 5th place. I have nothing positive to say except I hope you draft well today you son of a bitch.",
+        "Quite possibly the worst team to EVER end the season .500, I hate that this team is anything BUT last place. I scored the lowest points out of everyone, and that number WAS HIGHER THAN BEN'S TOTAL POINTS AGAINST. How unbelievably lucky can an individual be that scores like dog shit and still ends up .500 and in 5th place. I have nothing positive to say except I hope you draft well today you son of a bitch.",
         "7-7-0",
         "1221.90",
         "1148.06"
@@ -158,7 +158,7 @@ export class IdiotsComponent implements OnInit {
         this.ryanFinal(),
         'PutSomeMustardOnIt',
         9,
-        "Probably the least enthusiastic manager in the league.",
+        "Probably the least enthusiastic manager in the league. He sent a proxy to the fucking draft, and if he does it again this year I swear to god I'm going to punch Mitch in the god damn tooth. That's all I got to say about that.",
         "6-8-0",
         "1367.28",
         "1280.24"
@@ -170,7 +170,7 @@ export class IdiotsComponent implements OnInit {
         this.robbFinal(),
         'Lost Pollos Hermanos',
         10,
-        "Robb 'My brother cheated for me and I still got 10th place' McCleary. What more can you say?",
+        "Robb 'My brother cheated for me and I still got 10th place' McCleary. What more can you say?? He got handed an excellent team and somehow finished 10th!!! Incredible. Disgusting, but incredible. It doesn't appear that he's in the league this year, which is unfortunate for Mitch because now he's having an existential crisis as to who he's going to collude with this year.",
         "6-8-0",
         "1270.72",
         "1329.10"
@@ -182,7 +182,7 @@ export class IdiotsComponent implements OnInit {
         this.steveFinal(),
         'The PoopDicks',
         11,
-        "Technically last place by every standard except this stupid fucking league, Steve had a tough time this year.",
+        "Technically last place by every standard except this stupid fucking league, Steve had a tough time this year. The only time teams did good was when they were playing Steven or myself, which is why we have identical records. Although when we matched up, my team crushed the shit out of his, but somehow points scored is the tie breaker, which doesn't take into account the fact that the teams faced off and one reigned supreme. Take your not-last trophy and shove it up your ass, MEERRRRRHHHHRHRHRH (or however you spell that dumb shit). Can't wait for your bachelor party.",
         "4-10-0",
         "1277.94",
         "1407.20"
@@ -194,7 +194,7 @@ export class IdiotsComponent implements OnInit {
         this.meFinal(),
         'Who fucking knows',
         12,
-        "If all of the other teams combined and had a buffet, then shit out a team, it wouldn't be as bad as my team was last year.",
+        "If all of the other teams combined and had a buffet, then shit out a team, it wouldn't be as bad as my team was last year. I had so much hope coming out of the draft and week one when I buttsecksed Mitch's team, and then the unstoppable force that is my team's ability to lose rolled straight down a hill. But I learned a lot this year. Mostly this: I hate each and every one of you more than words can describe. I hope all the bad things in life happen to you guys and only you guys.",
         "4-10-0",
         "1151.42",
         "1306.72"
